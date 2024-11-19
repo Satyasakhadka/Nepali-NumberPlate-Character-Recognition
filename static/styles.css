@@ -11,14 +11,16 @@ body {
     background: url("/static/unnamed.jpg") no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    overflow: hidden; /* Prevent scroll bars */
+    min-height: 100%; /* Ensure body stretches vertically */
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* Overlay styling */
 body::before {
     content: "";
     position: absolute;
@@ -29,7 +31,6 @@ body::before {
     background-color: rgba(0, 0, 0, 0.9); /* Transparent black overlay */
     z-index: 1; /* Ensures overlay stays behind content */
 }
-
 
 /* Container styling */
 .container {
@@ -43,6 +44,8 @@ body::before {
     max-width: 600px;
     text-align: center;
     color: #333;
+    height: 100vh; /* Take full screen height */
+    overflow-y: auto; /* Scroll when content exceeds height */
 }
 
 /* Header styling */

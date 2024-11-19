@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>License Plate Recognition</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
-</head>
-<body>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Number Plate Character Recognition</h1>
-            <p>Upload an image of a Nepali number plate for character recognition.</p>
-        </header>
+      <header>
+        <h1>Number Plate Character Recognition</h1>
+        <p>
+          Upload an image of a Nepali number plate for character recognition.
+        </p>
+      </header>
 
-        <!-- Upload Section -->
-        <div class="upload-section">
-            <form action="/upload" method="post" enctype="multipart/form-data">
-                <div class="file-input">
-                    <label for="image" class="file-label">Choose an Image:</label>
-                    <input type="file" name="image" id="image" required>
-                </div>
-                <button type="submit" class="upload-btn">Upload</button>
-            </form>
-        </div>
+      <!-- Upload Section -->
+      <div class="upload-section">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <div class="file-input">
+            <label for="image" class="file-label">Choose an Image:</label>
+            <input type="file" name="image" id="image" required />
+          </div>
+          <button type="submit" class="upload-btn">Upload</button>
+        </form>
+      </div>
 
-        {% if detected_text %}
-        <!-- Results Section -->
-        <div class="result-image">
+      {% if detected_text %}
+      <!-- Results Section -->
+      <div class="results">
+        <div class="result-text">
+          <h3>Detected Text:</h3>
+          <p>{{ detected_text }}</p>
+          <div class="result-image">
             <h3>Image with Bounding Boxes:</h3>
-            <img src="{{ url_for('static', path='output_image.jpg') }}" alt="Image with Bounding Boxes">
+            <img
+              src="{{ url_for('static', path='output_image.jpg') }}"
+              alt="Image with Bounding Boxes"
+            />
+          </div>
         </div>
-        <div class="results">
-            <div class="result-text">
-                <h3>Detected Text:</h3>
-                <p>{{ detected_text }}</p>
-            </div>
-
-            
-        </div>
-        {% endif %}
+      </div>
+      {% endif %}
     </div>
-</body>
+  </body>
 </html>
