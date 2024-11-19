@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+ultralytics
+tensorflow
+opencv-python
+numpy
+pillow
+split-folders
+kaggle
