@@ -1,6 +1,6 @@
 # Nepali Number Plate Character Recognition Project
 
-This project was developed as part of the **Advanced Data Science** elective course offered by Samsung. The goal of this project is to recognize Nepali number plates characters from vehicle images by utilizing deep learning techniques, specifically YOLO and CNN models.
+This project is developed as part of the **Advanced Data Science** elective course offered by Samsung. The goal of this project is to recognize Nepali number plates characters from vehicle images by utilizing deep learning techniques, specifically YOLO and CNN models.
 
 ---
 
