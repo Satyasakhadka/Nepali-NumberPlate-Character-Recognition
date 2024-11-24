@@ -73,4 +73,7 @@ This project demonstrates the effective application of deep learning models to s
 
 https://github.com/user-attachments/assets/fc7080cb-cff8-4f0a-98ea-619cd41fd854
 
+## Example of Embossed Plate detection
+
+![Alt text](path/to/)
 
