@@ -2,6 +2,10 @@
 
 This project is developed as part of the **Advanced Data Science** elective course offered by Samsung. The goal of this project is to recognize Nepali number plates characters from vehicle images by utilizing deep learning techniques, specifically YOLO and CNN models.
 
+## Contributors:
+- [Satyasa Khadka](https://github.com/Satyasakhadka)
+- [Sandhya Baral](https://github.com/Sandukkk)
+- [Sudip Tiwari](https://github.com/sudiptiwari)
 ---
 
 ## Overview
