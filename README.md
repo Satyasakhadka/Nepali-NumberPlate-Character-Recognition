@@ -79,7 +79,7 @@ https://github.com/user-attachments/assets/fc7080cb-cff8-4f0a-98ea-619cd41fd854
 
 ## Example of Embossed Plate detection
 
-![Embossed Plate detection]("uploads/Screenshot%202024-11-22%20091150.png")
+![Embossed Plate detection](uploads/embossed.png)
 
 
 
